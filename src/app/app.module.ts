@@ -6,6 +6,7 @@ import { UserContainerComponent } from './user-container/user-container.componen
 import { OrderContainerComponent } from './order-container/order-container.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { UserSingleComponent } from './user-single/user-single.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
     UserContainerComponent,
     OrderContainerComponent,
     UserListComponent,
-    UserDetailComponent
+    UserDetailComponent,
+    UserSingleComponent
   ],
   imports: [
     BrowserModule

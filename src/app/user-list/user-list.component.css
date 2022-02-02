@@ -1,4 +1,11 @@
-.user-list {
+/* .user-list {
   height: 90%;
   background-color: rgb(198, 255, 85);
+} */
+
+esercizio1-user-single {
+  display: flex;
+  justify-content: center;
+  background-color: coral;
+  width: 90%;
 }
