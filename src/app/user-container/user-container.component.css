@@ -25,12 +25,14 @@ h3 {
   align-items: center;
   flex-grow: 2;
   height: 90%;
+  border: 2px solid rgb(48, 158, 26);
   background-color: rgb(178, 238, 154);
   gap: 20px;
 }
 .yellow {
   flex-grow: 1;
   height: 90%;
+  border: 2px solid rgb(167, 162, 18);
   background-color: rgb(229, 238, 144);
   display: flex;
   justify-content: center;

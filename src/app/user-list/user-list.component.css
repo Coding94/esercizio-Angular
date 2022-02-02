@@ -6,6 +6,7 @@
 esercizio1-user-single {
   display: flex;
   justify-content: center;
-  background-color: coral;
+  background-color: rgb(238, 234, 175);
   width: 90%;
+  border: 2px solid rgb(179, 179, 47);
 }
