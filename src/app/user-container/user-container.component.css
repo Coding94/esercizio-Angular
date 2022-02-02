@@ -1,0 +1,7 @@
+.user-container {
+  display: flex;
+  height: 80%;
+  background-color: rgb(94, 188, 216);
+  flex-grow: 1;
+  min-width: 100px;
+}

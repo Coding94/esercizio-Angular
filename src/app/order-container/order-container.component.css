@@ -1,0 +1,7 @@
+.order-container {
+  display: flex;
+  height: 80%;
+  background-color: rgb(211, 115, 115);
+  flex-grow: 1;
+  min-width: 100px;
+}
