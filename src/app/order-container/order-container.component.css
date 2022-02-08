@@ -3,3 +3,15 @@
   height: 100%;
   background-color: rgb(211, 115, 115);
 }
+
+.order-list {
+  height: 79%;
+  width: 95%;
+  background-color: #e0a6e0;
+  border: 2px solid #9c6c9c;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}

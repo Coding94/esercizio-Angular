@@ -7,6 +7,9 @@ import { OrderContainerComponent } from './order-container/order-container.compo
 import { UserListComponent } from './user-list/user-list.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { UserSingleComponent } from './user-single/user-single.component';
+import { OrderListComponent } from './order-list/order-list.component';
+import { OrderSingleComponent } from './order-single/order-single.component';
+import { OrderDetailComponent } from './order-detail/order-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +18,13 @@ import { UserSingleComponent } from './user-single/user-single.component';
     OrderContainerComponent,
     UserListComponent,
     UserDetailComponent,
-    UserSingleComponent
+    UserSingleComponent,
+    OrderListComponent,
+    OrderSingleComponent,
+    OrderDetailComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

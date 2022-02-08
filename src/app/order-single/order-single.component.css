@@ -1,0 +1,19 @@
+.order-single {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+esercizio1-user-single {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(238, 234, 175);
+  flex-grow: 1;
+  border: 2px solid rgb(179, 179, 47);
+}
+esercizio1-order-detail {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(134, 218, 132);
+  flex-grow: 1;
+  border: 2px solid rgb(102, 167, 100);
+}
