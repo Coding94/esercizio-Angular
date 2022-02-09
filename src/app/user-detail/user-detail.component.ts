@@ -74,7 +74,14 @@ export class UserDetailComponent implements OnInit {
             this.arr1.push(`${arrElem}`);
           });
         } else {
-          this.arr1.push(`${elem[0]}: ${elem[1]}`);
+          if (elem[0] == 'companies') {
+            param1.companies.forEach((elem4: any) => {
+              this.arr1.push(`Company: ${elem4.name}`);
+              this.arr1.push(`Description: ${elem4.description}`);
+            });
+          } else {
+            this.arr1.push(`${elem[0]}: ${elem[1]}`);
+          }
         }
       }
     });
