@@ -35,5 +35,6 @@ h3 {
   border: 2px solid rgb(167, 162, 18);
   background-color: rgb(229, 238, 144);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-content: center;
 }

@@ -1,1 +1,16 @@
 <h3>user-detail.component</h3>
+<div>
+  <p *ngFor="let x of arr1">
+    {{ x }}
+    <img
+      *ngIf="x.includes('username')"
+      src="{{ img }}"
+      alt=""
+      style="width: 150px"
+    />
+  </p>
+</div>
+
+<ng-template #noProjects>
+  <img src="#" alt="" />
+</ng-template>
