@@ -1,3 +1,4 @@
+import { DatePipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { objOne } from '@app/interfaces/interfaceOne';
 
@@ -58,19 +59,21 @@ export class UserDetailComponent implements OnInit {
     Object.entries(param1).forEach((elem: any) => {
       if (this.regex.test(elem[1])) {
         this.img = elem[1];
-        console.log(this.img);
       } else {
+        if (elem[0] == 'dateOfBirth') {
+          // console.log((elem[1] = new Date('dd/mm/yyyy')));
+          // console.log(elem[1].toLocaleDateString('en-US'));
+          elem[1] = '14 Dec 1995';
+        }
         if (
           typeof elem[1] === 'object' &&
           !Array.isArray(elem[1]) &&
           elem[1] !== null
         ) {
-          console.log(Object.entries(elem[1]));
           this.arr1.push(`${elem[0]}`);
           Object.keys(elem[1]).forEach((elem3) => {
             let arrElem = [];
             arrElem.push(`${elem3}: ${elem[1][elem3]}`);
-            console.log(arrElem);
             this.arr1.push(`${arrElem}`);
           });
         } else {
@@ -85,8 +88,8 @@ export class UserDetailComponent implements OnInit {
         }
       }
     });
-    console.log(this.arr1);
-    console.log(Object.entries(param1));
+    // console.log(this.arr1);
+    // console.log(Object.entries(param1));
   }
   // if (this.request === param1[elem])
 }
