@@ -7,24 +7,6 @@ import { objPpl, Role, Gender } from '@app/interfaces/interfaceTwo';
   styleUrls: ['./user-list.component.css'],
 })
 export class UserListComponent implements OnInit {
-  // EObj = [
-  //   {
-  //     Ecode: 1001,
-  //     Ename: 'Sashi',
-  //     Salary: 1000,
-  //   },
-  //   {
-  //     Ecode: 1200,
-  //     Ename: 'Sashimi',
-  //     Salary: 1500,
-  //   },
-  //   {
-  //     Ecode: 2450,
-  //     Ename: 'Ecodice',
-  //     Salary: 1200,
-  //   },
-  // ];
-
   arrayOfObj: objPpl[] = [
     {
       id: 3487,
