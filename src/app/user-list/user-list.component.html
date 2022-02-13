@@ -1,4 +1,8 @@
 <h3>user-list.component</h3>
-<esercizio1-user-single></esercizio1-user-single>
-<esercizio1-user-single></esercizio1-user-single>
-<esercizio1-user-single></esercizio1-user-single>
+<esercizio1-user-single
+  *ngFor="let object of arrayOfObj"
+  [singleObjOfArr]="object"
+  [array]="arrayOfObj"
+  [objInObj]="object.address"
+>
+</esercizio1-user-single>
