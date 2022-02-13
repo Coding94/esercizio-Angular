@@ -3,3 +3,12 @@ span {
   align-items: center;
   gap: 20px;
 }
+
+button {
+  height: 30px;
+  width: 80px;
+  color: white;
+  background-color: rgb(226, 59, 59);
+  border: none;
+  border-radius: 6px;
+}
