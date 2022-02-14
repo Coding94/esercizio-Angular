@@ -10,13 +10,11 @@ export class UserSingleComponent implements OnInit {
   @Input() singleObjOfArr: any;
   @Input() array: any;
   @Input() objInObj: any;
-  @Input() i: any;
   @Output() nomeVariabile = new EventEmitter<number>();
-  @Output() user = new EventEmitter<number>();
   constructor() {}
 
   ngOnInit(): void {}
-  removeUser(user: any) {
-    this.user.emit(user);
+  removeUser(singleObjOfArr: any) {
+    this.nomeVariabile.emit(singleObjOfArr);
   }
 }

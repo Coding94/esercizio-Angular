@@ -62,7 +62,8 @@ export class UserListComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  funzionePadre(event: any) {
-    this.arrayOfObj.splice(event, 1);
+  funzionePadre(event: any): void {
+    console.log(event);
+    this.arrayOfObj.splice(this.arrayOfObj.indexOf(event), 1);
   }
 }
