@@ -8,6 +8,6 @@ esercizio1-user-single {
   justify-content: center;
   background-color: rgb(238, 234, 175);
   width: 90%;
-  border: 2px solid rgb(179, 179, 47);
+  /* border: 2px solid rgb(179, 179, 47); */
   align-items: center;
 }

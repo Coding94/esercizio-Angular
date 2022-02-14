@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { objPpl, Role, Gender } from '@app/interfaces/interfaceTwo';
 
 @Component({
@@ -7,6 +7,8 @@ import { objPpl, Role, Gender } from '@app/interfaces/interfaceTwo';
   styleUrls: ['./user-list.component.css'],
 })
 export class UserListComponent implements OnInit {
+  @Input() ruolo: any = Role;
+
   arrayOfObj: objPpl[] = [
     {
       id: 3487,
@@ -65,5 +67,18 @@ export class UserListComponent implements OnInit {
   funzionePadre(event: any): void {
     console.log(event);
     this.arrayOfObj.splice(this.arrayOfObj.indexOf(event), 1);
+  }
+
+  getColor(ruolo: any) {
+    switch (ruolo) {
+      case 'ADMIN':
+        return '2px solid red';
+      case 'MANAGER':
+        return '2px solid blue';
+      case 'STAFF':
+        return '2px solid yellow';
+      default:
+        return 'black';
+    }
   }
 }

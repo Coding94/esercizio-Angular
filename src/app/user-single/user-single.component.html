@@ -1,8 +1,9 @@
-<span>
-  <!-- {{ array.indexOf(singleObjOfArr) + 1 + "." }} -->
+<span [ngStyle]="{ border: getColor(ruolo[singleObjOfArr.role]) }">
+  {{ array.indexOf(singleObjOfArr) + 1 + "." }}
   <img width="70" src="{{ singleObjOfArr.profilePhotoUrl }}" alt="" />
   <span>{{ singleObjOfArr.name }}{{ singleObjOfArr.surname }}</span>
-  <span>{{ singleObjOfArr.age }}</span
-  >{{ objInObj.city }}
+  <span>{{ singleObjOfArr.age }}</span>
+  <span>{{ ruolo[singleObjOfArr.role] }}</span>
+  {{ objInObj.city }}
   <button (click)="removeUser(singleObjOfArr)">Remove</button>
 </span>
