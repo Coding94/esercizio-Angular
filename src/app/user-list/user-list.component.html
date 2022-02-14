@@ -1,8 +1,9 @@
 <h3>user-list.component</h3>
 <esercizio1-user-single
-  *ngFor="let object of arrayOfObj"
   [singleObjOfArr]="object"
   [array]="arrayOfObj"
   [objInObj]="object.address"
+  *ngFor="let object of arrayOfObj; let i = index"
+  (nomeVariabile)="funzionePadre($event)"
 >
 </esercizio1-user-single>
